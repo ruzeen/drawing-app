@@ -4,7 +4,7 @@ With this project I added on to Brad Traversy's drawing app from "50 Projects Da
 
 ## New Features
 
-- Range of font/brush sizes with slider
+- Range of brush/font sizes with slider
 - Type Text
 - Eraser
 - Download Image
