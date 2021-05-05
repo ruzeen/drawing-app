@@ -10,9 +10,4 @@ With this project I added on to Brad Traversy's drawing app from "50 Projects Da
 - Download Image
 
 ## Demo
-
-<<<<<<< HEAD
 https://ruzeen.github.io/drawing-app/
-=======
-https://ruzeen.github.io/drawing-app/
->>>>>>> 39947d6f2fe12ee64999b4898d93a98566f2bc87
