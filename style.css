@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #e9e9e9;
+   font-family: 'Roboto', sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center; /* Align Vertically */
+   justify-content: center; /* Align Horizontally */
+   height: 100vh;
+   margin: 0;
+}
+
+canvas {
+    border: 2px solid #888888;
+    border-bottom: none;
+}
+
+.toolbox {
+    background-color: #555555;
+    border: 1px solid #888888;
+    display: flex;
+    width: 804px;
+    padding: 1rem;
+}
+
+.active-state {
+    color: #6cc96c;
+    transition: 0.2s ease-in;
+}
+
+.toolbox > * {
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    margin: 0.5rem;
+    padding: 0.25rem;
+
+    /* Disable Text Selection */
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.toolbox > *:not(#sizeChanger, #download-img) {
+    border-radius: 50%;
+}
+
+/* Size Change Slider */
+#sizeChanger {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 10px;
+    border-radius: 5px;
+    outline: none;
+    margin: auto 0;
+}
+  
+#sizeChanger::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #6cc96c;
+    cursor: pointer;
+}
+
+#sizeChanger::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #6cc96c;
+    cursor: pointer;
+}
+
+.toolbox > #size {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-right: 0;
+}
+
+.toolbox > #writeText {
+    font-family: serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+    transition: 0.2s ease-in;
+}
+
+.toolbox > #color {
+    margin: -2px 0 0 -95px;
+    visibility: hidden;
+}
+
+.toolbox > #select-color {
+    border: 1px dotted #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px; 
+    background-color:#000;
+    display:inline-block;
+    margin: auto 0;
+}
+
+#eraser-icon {
+    transition: 0.2s ease-in;
+}
+
+.toolbox > #download-img {
+    font-size: 1rem;
+    height: 30px;
+    width: 150px;
+    margin: auto 0;
+    margin-left: 180px;
+    padding: 0.25rem;
+}
+
+.toolbox > #download-img:active {
+    transform: scale(0.97);
+}
+
+.toolbox > *:last-child {
+    margin-left: auto;
+    font-size: 2rem;
+}
+
+.toolbox > *:last-child:focus {
+    outline: none;
+}
+
+.toolbox > *:last-child:active {
+    transform: scale(0.97);
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+   <link rel="stylesheet" href="style.css">
+   <title>Drawing App</title>
+</head>
+<body>
+   <canvas id="canvas" width="800" height="700">
+      Your browser does not support Canvas.
+   </canvas>
+   <div class="toolbox">
+      <input type="range" id="sizeChanger" min="2" max="100" value="10" step="2">
+      <span id="size">10</span>
+      <span id="writeText">T</span>
+      <span id="select-color"></span>
+      <span id="eraser"><i id="eraser-icon" class="fas fa-eraser"></i></span>
+      <input type="color" id="color">
+      <button id="download-img">Download Image</button>
+      <button id="clear">X</button>
+   </div>
+   <script src='script.js'></script>
+</body>
+</html>
