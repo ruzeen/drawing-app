@@ -86,6 +86,8 @@ typeEl.addEventListener('click', () => {
         textWriterActive = true;
         eraserActive = false;
         color = allSelectedColors[allSelectedColors.length-1];
+    } else if(!typeEl.classList.contains('active-state')) {
+        textWriterActive = false;
     }
 });
 
@@ -121,8 +123,6 @@ const drawLine = (x1, y1, x2, y2) => {
 /* Select & Change Color */
 selectColorEl.addEventListener('click', () => {
     eraserActive = false;
-    textWriterActive = false;
-    typeEl.classList.remove('active-state');
     eraserIcon.classList.remove('active-state');
     colorEl.click();
     changeColor();
