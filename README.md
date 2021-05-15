@@ -1,6 +1,6 @@
 # Drawing App
 
-With this project I added on to Brad Traversy's drawing app from "50 Projects Days 50"
+With this project I added on to Brad Traversy's drawing app from "50 Projects in 50 Days"
 
 ## New Features
 
